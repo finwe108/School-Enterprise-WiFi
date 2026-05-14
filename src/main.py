@@ -2,7 +2,6 @@
 import sys
 import click
 from .cli.cli import cli as cli_group
-from .gui.main_window import run_gui
 
 
 @click.group()
@@ -15,6 +14,7 @@ def main():
 def gui():
     """Launch the graphical user interface."""
     try:
+        from .gui.main_window import run_gui
         run_gui()
     except Exception as e:
         click.echo(f"Error launching GUI: {e}", err=True)
