@@ -1,0 +1,4 @@
+Click==8.1.7
+PyQt6==6.6.1
+pywifi==0.6.1
+keyring==24.3.0
